@@ -7,50 +7,73 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css"> 
     </head>
 
-
     <body>
-        <div>
-            <div class="flex">
-                <h1 class="ml-4 mb-6 flex text-left font-semibold text-4xl">Ramon Carvalho</h1>
+      <section>  
+        <div class="font-semibold text-4xl pt-8 pb-4">
+                <div class="md:flex"> 
+                    <h2 class= "mx-auto w-full text-center text-lg"><a href="index.html">Home</a></h2>
+                    <h2 class= "mx-auto w-full text-center text-lg"><a href="portfolio.html">Portfolio</a></h2>
+                    <h2 class= "mx-auto w-full text-center text-lg"><a href="contact me.html">Contact</a></h2>
+                </div>
+        </div>
+        <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 35vh;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url(index.jpg);">
+              <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
             </div>
-            <div class="px-4 pb-4 w-1/4 py-4">
-                <div class="md:flex">
-                    <h2 class= "text-center text-lg w-1/4"><a href="index.html">Home</a></h2>
-                    <h2 class= "text-center text-lg w-1/4"><a href="about me.html">Bio</a></h2> 
-                    <h2 class= "text-center text-lg w-1/4"><a href="portfolio.html">Portfolio</a></h2>
-                    <h2 class= "text-center text-lg w-1/4"><a href="contact me.html">Contato</a></h2>
+            <div class="container relative mx-auto">
+              <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-8/12">
                 </div>
             </div>
+          </div>
+          <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0px);">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+          </div>
         </div>
-        <hr>
+      </section>
         
-        <form name="Contact me" data-netlify="true" method="POST" class="max-w-2xl bg-white py-10 px-5 m-auto w-full mt-10">
-            <div class="text-3xl mb-6 text-center">
-              Send me a message 
-            </div>
-          
-            <div class="grid grid-cols-2 gap-4 max-w-xl m-auto">
-          
-              <div class="col-span-2 lg:col-span-1">
-                <label></label>
-                <input type="text" name="name" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="Name"/>
-              </div>
-          
-              <div class="col-span-2 lg:col-span-1">
-                <input type="text" name="email" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="Email Address"/>
-              </div>
-          
-              <div class="col-span-2">
-                <textarea cols="30" rows="8" name="message "class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="Message"></textarea>
-              </div>
-          
-              <div class="col-span-2 text-right">
-                <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 hover:bg-gray-800 rounded w-full md:w-32">
-                  Submit
-                </button>
-              </div>
-          
-            </div>
-        </form>
+        
+      <form name="Contact me" data-netlify="true" method="POST" class="max-w-2xl bg-white py-10 px-5 m-auto w-full mt-10">
+        <div class="text-3xl mb-6 text-center">
+          GET IN TOUCH
+          <p class="text-lg mt-2 mb-6 text-center text-gray-300">Interested in my work? I'm open to discuss ideas and professional opportunities. Drop me a message and I will get back to you.</p>
+        </div>
+      
+        <div class="grid grid-cols-2 gap-4 max-w-xl m-auto">
+      
+          <div class="col-span-2 lg:col-span-1">
+            <label>Name</label>
+            <input type="text" name="name" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="John Doe"/>
+          </div>
+      
+          <div class="col-span-2 lg:col-span-1">
+            <label>E-mail</label>
+            <input type="text" name="email" class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="John.doe@email.com"/>
+          </div>
+      
+          <div class="col-span-2">
+            <label>Message</label>
+            <textarea cols="30" rows="8" name="message "class="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" placeholder="Hi, Ramon..."></textarea>
+          </div>
+      
+          <div class="col-span-2 text-right">
+            <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 hover:bg-gray-800 rounded w-full md:w-32">
+              Submit
+            </button>
+          </div>
+      
+        </div>
+      </form>
+
+      <section class="mt-20 pb-20 relative block">
+        <span id="blackOverlay" class="w-full h-full absolute opacity-40 bg-black"></span>
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px);">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-black opacity-40 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </section>
     </body>
 </html>

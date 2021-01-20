@@ -5,52 +5,114 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Who am I?</title>    
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css"> 
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     
     <body>
-        <div>
-            <div class="flex">
-                <h1 class="ml-4 mb-6 flex text-left font-semibold text-4xl">Ramon Carvalho</h1>
+        <main>
+            <div class="font-semibold text-4xl pt-8 pb-4">
+                    <div class="md:flex"> 
+                        <h2 class= "mx-auto w-full text-center text-lg"><a href="index.html">Home</a></h2>
+                        <h2 class= "mx-auto w-full text-center text-lg"><a href="about me.html">About me</a></h2> 
+                        <h2 class= "mx-auto w-full text-center text-lg"><a href="portfolio.html">Portfolio</a></h2>
+                        <h2 class= "mx-auto w-full text-center text-lg"><a href="contact me.html">Contact</a></h2>
+                    </div>
             </div>
-            <div class="px-4 pb-4 w-1/4 py-4">
-                <div class="md:flex">
-                    <h2 class= "text-center text-lg w-1/4"><a href="index.html">Home</a></h2>
-                    <h2 class= "text-center text-lg w-1/4"><a href="about me.html">Bio</a></h2> 
-                    <h2 class= "text-center text-lg w-1/4"><a href="portfolio.html">Portfolio</a></h2>
-                    <h2 class= "text-center text-lg w-1/4"><a href="contact me.html">Contato</a></h2>
+            <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 25vh;">
+                <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url(index.jpg);">
+                  <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
                 </div>
+                <div class="container relative mx-auto">
+                  <div class="items-center flex flex-wrap">
+                    <div class="w-full lg:w-8/12">
+                      <div class="pb-12">
+                        <h1 class="text-white font-semibold text-4xl">
+                            [Ramon C. Gondim]
+                        </h1>
+                        <h2 class="mt-4 text-lg text-gray-300">
+                            Product Manager & Management Consultant</h2> 
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+              </div>
             </div>
-        </div>
-        
-        <hr>
+            
+            <section class="pb-20 bg-white mt-24">
+              <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center mt-32">
+                  <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg">
+                      <img alt="That's me, Ramon!" src="Ramon.jpeg" class="w-full align-middle rounded-t-lg">
+                      <blockquote class="relative p-8 mb-4">
+                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                          <polygon points="-30,95 583,95 583,65" class="text-white fill-current"></polygon>
+                        </svg>
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-8/12 px-12 mr-auto ml-auto">
+                    <h3 class="text-3xl mb-4 font-semibold leading-normal">
+                      Hi, I'm Ramon Carvalho
+                    </h3>
+                    <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                      I help enterprises around the globe to build valuable, usable and feasible products, while contributing to business goals that matter.  
+                    </p>
+                    <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                      I am a Tech‑Savvy and Analytically Focused PM with business acumen who leverage my data driven, empathetic and action-oriented personality to <span class="font-semibold">solve meaningful problems</span> and deliver <span class="font-semibold">products that customers love</span></h3>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex flex-wrap">
+                  <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                          <i class="fas fa-award"></i>
+                        </div>
+                        <h6 class="text-xl font-semibold">Product Manager @ Fintechs startups</h6>
+                        <p class="mt-2 mb-4 text-gray-600">
+                          Developing, from prototype to delivery, software and hardware products in the Payments and Lending Industries
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                          <i class="fas fa-globe"></i>
+                        </div>
+                        <h6 class="text-xl font-semibold">Project and Product Manager @ Fortune 500</h6>
+                        <p class="mt-2 mb-4 text-gray-600">
+                          From Optimizing Distribution Centers footprints to Designing Cloud cost management solutions 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-800 ">
+                          <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h6 class="text-xl font-semibold">Associate @ Mckinsey & Company</h6>
+                        <p class="mt-2 mb-4 text-gray-600">
+                          Helping organizations innovate, scale, and solve business goals that matters.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </section>
 
-        <div class="m-4 space-x-4 text-center">
-            <div class="md:flex">
-                <div class="flex-1 space-y-4">
-                    <img class="mx-auto" src="Ramon.jpeg" alt="Sou Eu" width="450" height="400">
-                    <div class="py-4 px-12 space-y-2 text-left">
-                        <div class="p-4 rounded-xl shadow-md overflow-hidden">
-                            <h2 class="uppercase tracking-wide text-sm font-semibold">+5 y Product Manager @ Fintechs & Fortune 500</h2> 
-                            <div class="px-8 py-4 space-y-2">
-                                <h3> Detail‑Oriented, Tech‑Savvy, & Analytically Focused </h3>
-                                <em> Inspired to build valuable, usable and feasible products that<strong> customers love.</strong></em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-1 space-y-4">
-                    <img class="mx-auto" src="Ramon 2.jpeg" alt="Sou Eu" width="276" height="400">
-                    <div class="py-4 px-12 space-y-2 text-left">
-                        <div class="p-4 rounded-xl shadow-md overflow-hidden">
-                            <h2 class="uppercase tracking-wide text-sm font-semibold">Management Consultant @ Mckinsey</h2> 
-                            <div class="px-8 py-4 space-y-2">
-                                <h3> Business Acumen, Data Driven & Action-Oriented</h3>
-                                <em> Driven to help organizations innovate, scale, and solve business <strong>goals that matters.</strong></em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>
+        </main>
     </body>
 </html>
